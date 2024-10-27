@@ -53,7 +53,7 @@ var hit_normal
 
 
 func _handles(obj) -> bool:
-	return editable_object
+	return editable_object && obj is MeshInstance3D
 
 
 func _forward_3d_gui_input(camera, event) -> int:
@@ -81,7 +81,7 @@ func _user_input(event) -> bool:
 			_set_collision()
 			return false
 
-	if event is InputEventKey and event.key_code == KEY_CTRL:
+	if event is InputEventKey and (event as InputEventKey).keycode == KEY_CTRL:
 		if event.is_pressed():
 			invert_brush = true
 			return false
