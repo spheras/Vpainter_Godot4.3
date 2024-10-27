@@ -1,13 +1,7 @@
 # Vpainter
-Vpaiter for godot 4.0 based on Vpainter for godot 3.x
-![](images/logo.png)
+Vpaiter for godot 4.3 based on https://github.com/nx7r/Vpainter
 
-# **A vertex painting addon for the Godot 4.0.**
-![](images/preview.gif)
++ minor modifications to work in godot 4.3 without errors
++ added an improved? shader to mix 4 textures. At least to work with a "mask" texture, only with albedo+normal+AO
 
 
-# **Based on**
-
-Vpainter by tomankirilov.
-
-https://github.com/tomankirilov/VPainter
